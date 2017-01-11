@@ -56,10 +56,9 @@ input{
 }
 .font-picture{
 	img{
-		height: 120px;
+		height: 160px;
 	}
 	float: left;
-	
 }
 a.navbar-brand span{
 	font-weight: 600;
@@ -184,6 +183,10 @@ td.btn-fonts{
 	display: inline-block;
 	text-align: center;
 	background-color: blue;
+}
+
+.btn-sumbit{
+	width: 303px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
