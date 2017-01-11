@@ -1,0 +1,34 @@
+<%= form_for(@font, :html => {:multipart => true}) do |f| %>
+  <% if font.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(font.errors.count, "error") %> prohibited this font from being saved:</h2>
+
+      <ul>
+      <% font.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="form-group-1"> 
+  <div class="field">
+    <%= f.label :name, "Nom de la font" %>
+    <%= f.text_field :name, class:"form-control example-text-input" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description, class:"form-control example-text-input" %>
+  </div>
+
+  <div class="field custom-file">
+    <%= f.label :picture %>
+    <%= f.file_field :picture, class:"btn btn-default btn-file" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit class:"btn btn-default" %>
+  </div>
+  </div>
+<% end %>

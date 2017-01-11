@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @font.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @font.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@font.picture_url, :width => 600) if @font.picture.present? %>
+</p>
+
+<%= link_to 'Edit', edit_font_path(@font) %> |
+<%= link_to 'Back', fonts_path %>

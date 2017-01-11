@@ -1,0 +1,189 @@
+// Place all the styles related to the fonts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+td{
+	margin: 10px;
+	a{
+		background-color: black;
+		color: white;
+		padding: 10px;
+		display: block;
+		margin: 2px;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.button-show, .button-edit, .button-destroy{
+	a{
+	background-color: transparent;
+	border: none;
+	color: white;
+	&:visited{
+		color: white;
+	}
+	&:hover{
+		background-color: transparent;
+		border: none;
+	}
+}
+
+
+}
+.font-description{
+	padding: 0px 30px;
+}
+
+input{
+	background-color: transparent;
+	border: none;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #c4c4c4;
+    color: #FFF;
+}
+.form-control, .btn{
+	border-radius: 0px;
+	&:focus{
+		outline:none;
+	}
+}
+.form-group-1{
+	max-width: 400px;
+	margin: auto;
+	background-color: #e6eaf1;
+	padding: 50px;
+}
+.font-picture{
+	img{
+		max-height: 105px;
+	}
+	float: left;
+	
+}
+a.navbar-brand span{
+	font-weight: 600;
+	color: #696969;
+}
+
+*{
+	font-family: 'Lato', sans-serif;
+}
+.input-name{
+	margin: auto;
+	padding-top: 50px;
+}
+.input{
+	background-color: #fff;
+	border: 1px solid black;
+	width: 200px;
+	outline:none;
+}
+.form-login{
+	background-color: #d7dce3;
+	height: 400px;
+	width: 400px;
+	margin: auto;
+	text-align: center;
+}
+.input-picture{
+	#font_picture{
+		margin: auto;
+	}
+}
+.drop-pic{
+	padding: 30px 0px;
+}
+.font-name{
+	font-family: Arial;
+	font-size: 2em;
+	margin: 0px;
+	padding: 50px;
+	display: block;
+}
+.font-desc{
+	display: block;
+	margin: 0px;
+	padding: 10px;
+}
+tr.fonts-info{
+	background-color: #fff;
+	border: 2px solid #7f8389;
+	margin: 5px;
+	position: relative;
+	display: inline-block;
+	padding: 0px;
+	text-align: center;
+	width: 350px;
+	height: 430px;
+}
+td.btn-show{
+	display: inline-block;
+	margin: 0px;
+	position: absolute;
+	bottom: -9px;
+	left: -7px;
+	a{
+		width: 116px;
+		display: inline-block;
+		background-color: #7f8389;
+		transition:0.2s;
+		color: #1f2022;
+		&:hover{
+			background-color: #3c3e42;
+			transition:0.2s;
+			color: #fff;
+		}
+	}
+}
+
+td.btn-edit{
+	display: inline-block;
+	margin: 0px;
+	position: absolute;
+	bottom: -9px;
+	left: 109px;
+	a{
+		width: 116px;
+		display: inline-block;
+		background-color: #7f8389;
+		transition:0.2s;
+		color: #1f2022;
+		&:hover{
+			background-color: #3c3e42;
+			transition:0.2s;
+			color: #fff;
+		}
+	}
+}
+
+td.btn-destroy{
+	display: inline-block;
+	margin: 0px;
+	position: absolute;
+	bottom: -9px;
+	left: 223px;
+	a{
+		width: 116px;
+		display: inline-block;
+		background-color: #7f8389;
+		transition:0.2s;
+		color: #1f2022;
+		&:hover{
+			background-color: #3c3e42;
+			transition:0.2s;
+			color: #fff;
+		}
+	}
+}
+td.btn-fonts{
+	margin: auto;
+}
+
+.fonts-footer{
+	display: inline-block;
+	text-align: center;
+	background-color: blue;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');

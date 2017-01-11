@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fonts</h1>
+
+<table>
+
+  <tbody>
+    <% @fonts.each do |font| %>
+      <tr class="fonts-info">
+        <td class="font-name"><%= font.name%></td>
+        <td class="font-desc"><%= font.description %></td>
+        <td class="font-picture"><%= image_tag font.picture %></td>
+        
+        <td class="btn-fonts">
+        <td class="btn-show"><%= link_to 'Show', font %></td>
+        <td class="btn-edit"><%= link_to 'Edit', edit_font_path(font) %></td>
+        <td class="btn-destroy"><%= link_to 'Destroy', font, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<button class="btn"><%= link_to 'New Font', new_font_path %></button>
